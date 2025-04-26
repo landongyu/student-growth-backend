@@ -1,0 +1,31 @@
+################ Python ################
+__pycache__/
+*.py[cod]
+
+################ Virtual envs ################
+.env/
+
+################ Envars ################
+.env           
+!.env.example   
+
+################ macOS ################
+.DS_Store
+
+################ Docker ################
+db-data/
+*.log
+
+################ IDE / Editor ################
+.vscode/
+.idea/
+*.swp
+*~
+
+################ Poetry & pip cache ################
+.cache/
+
+################ Test / Coverage ################
+htmlcov/
+coverage.xml
+pytest_cache/
