@@ -5,7 +5,6 @@ description = ""
 authors = [
     { name = "Dongyu Lan", email = "dongyu.lan@duke.edu" }
 ]
-readme = "README.md"
 
 requires-python = ">=3.11,<3.12"
 
