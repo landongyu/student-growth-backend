@@ -18,7 +18,6 @@ db-data/
 
 ################ IDE / Editor ################
 .vscode/
-.idea/
 *.swp
 *~
 
