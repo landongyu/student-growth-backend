@@ -22,11 +22,11 @@ poetry install --no-root
 
 # 在项目根目录建立 .env 文件，写入：
 
-echo DATABASE_URL="mysql+pymysql://growth:growth@localhost:3307/growth" > .env
+cp .env.example .env
 
 # 5. 启动 FastAPI 服务
 
-poetry run uvicorn app.main:app --reload
+poetry run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 # 6. 验证
 
