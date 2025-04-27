@@ -2,6 +2,18 @@
 
 ## 快速启动指南
 
+### 前置条件:
+
+#### Docker & Docker Compose
+
+#### Python 3.11.x
+
+#### Poetry (Python 依赖和虚拟环境管理工具)
+
+```bash
+pip install poetry
+```
+
 ### 1. 克隆仓库
 
 ```bash
