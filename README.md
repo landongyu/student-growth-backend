@@ -1,3 +1,4 @@
+```bash
 # 1. Clone the repo
 
 git clone https://github.com/你的用户名/student-growth-backend.git
@@ -32,3 +33,4 @@ poetry run uvicorn app.main:app --reload
 curl http://localhost:8000/health
 
 # 应看到 {"status":"ok"}
+```
