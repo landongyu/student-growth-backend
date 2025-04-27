@@ -1,36 +1,40 @@
-```bash
-# 1. Clone the repo
+# Student Growth Backend
 
+## 快速启动指南
+
+### 1. 克隆仓库
+
+```bash
 git clone https://github.com/你的用户名/student-growth-backend.git
 cd student-growth-backend
+```
 
-# 2. 启动数据库（在 Docker 容器里跑 MySQL）
+### 2. 启动数据库
 
+```bash
 docker compose up -d
+```
 
-# Docker 会拉取 mysql:8.0 镜像，并在容器内监听 3306，
+### 3. 安装 Python 依赖
 
-# 宿主机映射到 3307
-
-# 3. 安装 Python 依赖
-
+```bash
 poetry install --no-root
+```
 
-# 这一步会根据 pyproject.toml & poetry.lock 安装 fastapi、uvicorn、pymysql 等。
+### 4. 配置环境变量
 
-# 4. 配置环境变量
-
-# 在项目根目录建立 .env 文件，写入：
-
+```bash
 cp .env.example .env
+```
 
-# 5. 启动 FastAPI 服务
+### 5. 启动 FastAPI 服务
 
+```bash
 poetry run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
 
-# 6. 验证
+### 6. 验证
 
+```bash
 curl http://localhost:8000/health
-
-# 应看到 {"status":"ok"}
 ```
